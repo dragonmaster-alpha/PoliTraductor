@@ -1,0 +1,6 @@
+{
+	"appId": "com.aklame.politraductor",
+	"appName": "PoliTraductor",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

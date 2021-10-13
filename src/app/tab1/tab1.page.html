@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img class="title-image" src="assets/img/logo.svg" width="200" height="20" />
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<div  class="ion-no-border new-background-color" collapse="condense">
+<ion-toolbar class="new-background-color">
+   <ion-grid class="new-background-color">
+	  	<ion-row>
+	  	<ion-col size="5">
+	  		
+  
+			  <ionic-selectable
+			    [(ngModel)]="origen"
+			    
+			    [items]="languages"
+			    itemValueField="id"
+			    itemTextField="name"
+			    [canSearch]="true"
+			    (onChange)="origenChange($event)">
+			  </ionic-selectable>
+
+	  	</ion-col>
+	  	<ion-col text-center >
+	  		
+	  		<ion-button icon-only size="small"   (click)="changeLanguages()" class="">
+	  		<ion-icon slot="icon-only" name="repeat-outline"></ion-icon>
+		      </ion-button>
+	  		
+	  		
+	  	</ion-col>
+	  	<ion-col size="5">
+	  			<ionic-selectable
+			    [(ngModel)]="destino"
+			    [items]="languages"
+			    itemValueField="id"
+			    itemTextField="name"
+			    [canSearch]="true"
+			    (onChange)="destinoChange($event)">
+			  </ionic-selectable>	  		</ion-col>
+	  	</ion-row>
+	  	
+
+	  	
+	  	
+	  	
+	  	
+	  	
+	  </ion-grid>
+</ion-toolbar>
+</div>
+
+
+<ion-content [fullscreen]="false">
+
+  
+  <div id="container">
+	  
+	  <ion-grid>
+	  	<!--<ion-row>
+	  	<ion-col size="5">
+	  		
+  
+			  <ionic-selectable
+			    [(ngModel)]="origen"
+			    [items]="languages"
+			    itemValueField="id"
+			    itemTextField="name"
+			    [canSearch]="true"
+			    (onChange)="origenChange($event)">
+			  </ionic-selectable>
+
+	  	</ion-col>
+	  	<ion-col text-center >
+	  		
+	  		<ion-button fill="clear" ion-button icon-only size="small"   (click)="changeLanguages()" class="">
+		        <ion-icon name="repeat-outline"></ion-icon>
+		      </ion-button>
+	  		
+	  		
+	  	</ion-col>
+	  	<ion-col size="5">
+	  			<ionic-selectable
+			    [(ngModel)]="destino"
+			    [items]="languages"
+			    itemValueField="id"
+			    itemTextField="name"
+			    [canSearch]="true"
+			    (onChange)="destinoChange($event)">
+			  </ionic-selectable>	  		</ion-col>
+	  	</ion-row>-->
+	  	
+	  	<ion-row>
+	  	<ion-col>
+  <ion-textarea autofocus="false" clear-on-edit="true" rows="30" [(ngModel)]="texto" placeholder="Escribe aquí tu texto a traducir..."></ion-textarea>
+	  	</ion-col>
+	  	</ion-row>
+	  	
+	  	<ion-row>
+	  	<ion-col>
+	  		
+	  	</ion-col>
+	  	</ion-row>
+	  	
+	  	
+	  	
+	  	
+	  	
+	  </ion-grid>
+	  
+  </div>
+  
+  
+</ion-content>
+
+<ion-footer class="ion-no-border boton-traducir">
+  <ion-toolbar>
+    <ion-button expand="full" (click)="traducir()">TRADUCIR</ion-button>
+  </ion-toolbar>
+</ion-footer>

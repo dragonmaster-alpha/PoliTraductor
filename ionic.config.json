@@ -1,0 +1,14 @@
+{
+  "name": "PoliTraductor",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/politraductorapi/public/getTranslation",
+      "proxyUrl": "http://localhost"
+    }
+  ]
+}

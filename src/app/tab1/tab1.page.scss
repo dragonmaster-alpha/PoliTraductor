@@ -1,0 +1,31 @@
+.boton-traducir{ background: var(--ion-color-primary);}
+ion-toolbar ion-button{ color: white;}
+.ionic-selectable-value-item{ color: black;}
+
+.new-background-color{
+    --background: #2e475a;
+}
+.ionic-selectable-icon-inner{ color: var(--ion-color-blanco);}
+.ionic-selectable-item-is-selected,.ionic-selectable-item-is-disabled
+ {
+   .label {
+    color:red;
+   }
+ }
+ 
+.button-small{
+	     --padding-start: 0.5em;
+    --padding-end: 0.5em;
+	     }
+ 
+ .ionic-selectable-value, .ionic-selectable-value-item, .ionic-selectable-ios .ionic-selectable-value, .ionic-selectable-md .ionic-selectable-value, .ionic-selectable-inner, .ionic-selectable{
+	 color: #ffffff !important;
+
+ }
+ 
+
+ion-alert:not(.select-alert) {
+  --color: white !important;
+
+  
+}
